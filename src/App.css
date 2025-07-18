@@ -1,0 +1,133 @@
+/* ---------------------------
+   Global Reset & Font
+---------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  min-height: 100vh;
+}
+
+/* ---------------------------
+   App Container & Logo
+---------------------------- */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* ---------------------------
+   Navbar Styling
+---------------------------- */
+.navbar {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #FFD700 !important;
+}
+
+/* ---------------------------
+   Headline Text
+---------------------------- */
+.headline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0;
+  color: #2c3e50;
+}
+
+/* ---------------------------
+   Card Styling
+---------------------------- */
+.card {
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------------------
+   Container & Layout
+---------------------------- */
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Optional spacing between rows */
+.container .row {
+  margin-bottom: 20px;
+}
+
+/* ---------------------------
+   App Header (Default CRA)
+---------------------------- */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Link Color */
+.App-link {
+  color: #61dafb;
+}
+
+/* Logo Spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------------------------
+   Responsive Adjustments
+---------------------------- */
+@media (max-width: 576px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .headline {
+    font-size: 1.8rem;
+    margin: 20px 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
